@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    height: 10vh;
+}
+
+.bg-imge-container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 90vh;
+    background-image: url('imgs/b29a926f6b69ebbf0444ced366462089.jpg');
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 18rem;
+    margin: 0 auto;
+    /* Center the card */
+}
+
+@media (min-width: 768px) {
+    .card-slider .row {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        padding-bottom: 15px;
+    }
+
+    .card-slider .row::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .card-slider .row {
+        flex-wrap: nowrap;
+        /* Ensure cards stay in a single row */
+        overflow-x: auto;
+        /* Enable horizontal scroll on small devices */
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+        overflow-y: hidden;
+        padding-bottom: 15px;
+        /* Add some space below the cards */
+    }
+}
